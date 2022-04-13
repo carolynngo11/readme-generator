@@ -17,22 +17,22 @@ inquirer
     {
         type: 'input',
         name: 'Installation',
-        message: "___?",
+        message: "What are the steps required to install your project?",
     },
     {
         type: 'input',
         name: 'Usage',
-        message: "___?",
+        message: "Provide screenshot.",
     },
     {
         type: 'input',
         name: 'Contributing',
-        message: "___?",
+        message: "List your collaborators (if any).",
     },
     {
         type: 'input',
         name: 'Tests',
-        message: "___?",
+        message: "Write tests for your application.",
     },
     {
         type: 'input',
