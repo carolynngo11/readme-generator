@@ -1,13 +1,87 @@
-// TODO: Include packages needed for this application
+const inquirer = require('inquirer');
+const fs = require('fs');
 
-// TODO: Create an array of questions for user input
-const questions = [];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+inquirer
+  .prompt([
+    {
+        type: 'input',
+        name: 'Title',
+        message: "What is the project name?",
+    },
+    {
+        type: 'input',
+        name: 'Description',
+        message: "What is your project about?",
+    },
+    {
+        type: 'input',
+        name: 'Installation',
+        message: "___?",
+    },
+    {
+        type: 'input',
+        name: 'Usage',
+        message: "___?",
+    },
+    {
+        type: 'input',
+        name: 'Contributing',
+        message: "___?",
+    },
+    {
+        type: 'input',
+        name: 'Tests',
+        message: "___?",
+    },
+    {
+        type: 'input',
+        name: 'GitHub',
+        message: "Enter your GitHub username.",
+    },
 
-// TODO: Create a function to initialize app
-function init() {}
+  ])
+  .then((response) => {
+    console.log(response)
+    fs.writeFile('README.md', generateReadMe(response), function(err){
+        if (err) {
+            console.log(err);
+        }else{
+            console.log('Successfully added README file!');
+        }
+    })
+  })
 
-// Function call to initialize app
-init();
+  function generateReadMe({Title, Description, Installation, Usage, Contributing, Tests, GitHub}){
+      return `# ${Title}
+
+## Description
+${Description}
+
+## Table of Contents
+      
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+      
+## Installation
+${Installation}
+
+## Usage
+${Usage}
+
+## License
+
+## Contributing
+${Contributing}
+
+## Tests
+${Tests}
+
+## Questions
+Have any Questions? Contact me: https://github.com/${GitHub}
+`
+}
