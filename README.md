@@ -1,7 +1,9 @@
 # README Generator
 
+a
+
 ## Description
-Creating a generator that automatically creates a README file to projects.
+The premise of this project is to create a README generator so that users can automatically generate a README file without having to format anything.
 
 ## Table of Contents
       
@@ -17,8 +19,6 @@ Creating a generator that automatically creates a README file to projects.
 
 ## Usage
 ...
-
-## License
 
 ## Contributing
 ...

@@ -39,6 +39,12 @@ inquirer
         name: 'GitHub',
         message: "Enter your GitHub username.",
     },
+    {
+        type: 'list',
+        name: 'License',
+        message: "Choose license.",
+        choices: ['a', 'b', 'c', 'd']
+    },
 
   ])
   .then((response) => {
@@ -52,8 +58,10 @@ inquirer
     })
   })
 
-  function generateReadMe({Title, Description, Installation, Usage, Contributing, Tests, GitHub}){
+  function generateReadMe({Title, License, Description, Installation, Usage, Contributing, Tests, GitHub}){
       return `# ${Title}
+
+${License}
 
 ## Description
 ${Description}
@@ -72,8 +80,6 @@ ${Installation}
 
 ## Usage
 ${Usage}
-
-## License
 
 ## Contributing
 ${Contributing}
