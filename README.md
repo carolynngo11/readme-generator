@@ -18,7 +18,7 @@ The objective of this project is to create a README generator so that users can 
 Installed Node application and used Inquirer (npm).
 
 ## Usage
-...
+[Video Link](https://drive.google.com/file/d/1O7Wmp8obrZtjiFkQF2GjHuDAtRd159H0/view)
 
 ## Contributing
 carolynngo11
