@@ -22,7 +22,7 @@ inquirer
     {
         type: 'input',
         name: 'Usage',
-        message: "Provide screenshot.",
+        message: "Provide example and/or screenshot.",
     },
     {
         type: 'input',
@@ -43,7 +43,7 @@ inquirer
         type: 'list',
         name: 'License',
         message: "Choose license.",
-        choices: ['a', 'b', 'c', 'd']
+        choices: ['MIT', 'Apache', 'GPL']
     },
 
   ])
@@ -61,7 +61,7 @@ inquirer
   function generateReadMe({Title, License, Description, Installation, Usage, Contributing, Tests, GitHub}){
       return `# ${Title}
 
-${License}
+![](https://img.shields.io/badge/License-${License}-success)
 
 ## Description
 ${Description}

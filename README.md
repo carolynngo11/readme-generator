@@ -1,9 +1,9 @@
 # README Generator
 
-a
+![](https://img.shields.io/badge/License-Apache-blue)
 
 ## Description
-The premise of this project is to create a README generator so that users can automatically generate a README file without having to format anything.
+The premise of this project is to create a README generator so that users can utilize it to automatically generate a README file without having to format the file manually.
 
 ## Table of Contents
       
@@ -15,16 +15,16 @@ The premise of this project is to create a README generator so that users can au
 - [Questions](#questions)
       
 ## Installation
-...
+Installed Node application and used Inquirer (npm).
 
 ## Usage
 ...
 
 ## Contributing
-...
+carolynngo11
 
 ## Tests
-...
+npm test
 
 ## Questions
 Have any Questions? Contact me: https://github.com/carolynngo11
