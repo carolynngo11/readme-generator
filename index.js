@@ -26,7 +26,7 @@ inquirer
     },
     {
         type: 'input',
-        name: 'Contributing',
+        name: 'Contributors',
         message: "List your collaborators (if any).",
     },
     {
@@ -58,7 +58,7 @@ inquirer
     })
   })
 
-  function generateReadMe({Title, License, Description, Installation, Usage, Contributing, Tests, GitHub}){
+  function generateReadMe({Title, License, Description, Installation, Usage, Contributors, Tests, GitHub}){
       return `# ${Title}
 
 ![](https://img.shields.io/badge/License-${License}-success)
@@ -81,8 +81,8 @@ ${Installation}
 ## Usage
 ${Usage}
 
-## Contributing
-${Contributing}
+## Contributors
+${Contributors}
 
 ## Tests
 ${Tests}

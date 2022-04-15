@@ -20,7 +20,7 @@ Installed Node application and used Inquirer (npm).
 ## Usage
 [Video Link](https://drive.google.com/file/d/1O7Wmp8obrZtjiFkQF2GjHuDAtRd159H0/view)
 
-## Contributing
+## Contributors
 carolynngo11
 
 ## Tests
