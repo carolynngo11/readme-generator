@@ -1,9 +1,9 @@
 # README Generator
 
-![](https://img.shields.io/badge/License-Apache-blue)
+![](https://img.shields.io/badge/License-MIT-success)
 
 ## Description
-The premise of this project is to create a README generator so that users can utilize it to automatically generate a README file without having to format the file manually.
+The objective of this project is to create a README generator so that users can utilize it to automatically generate a README file without having to format the file manually.
 
 ## Table of Contents
       
